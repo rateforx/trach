@@ -1,0 +1,9 @@
+.game {
+  background-color: #111;
+  color: white;
+  padding: 2em;
+}
+.game .health img {
+  margin: 0.25em;
+}
+/*# sourceMappingURL=Board.css.map */
