@@ -1,5 +1,5 @@
 import { PixiComponent } from '@inlet/react-pixi';
-import player = 
+// import player =
 
 export default class Player {
     id          = '';
@@ -15,10 +15,11 @@ export default class Player {
     }
 }
 
-export const Player = PixiComponent( 'PixiPlayer', {
+export const PixiPlayer = PixiComponent( 'PixiPlayer', {
 
     create ( props ) {
-        return Sprite.from()
+        return undefined;
+        // return Sprite.from();
     },
-    applyProps ()
-} )
+    applyProps () {},
+} );
