@@ -4,20 +4,39 @@ import React              from 'react';
 import './App.css';
 import { TrachGameBoard } from './Board';
 import { TrachGame }      from './Game';
+import PixiBoard          from './PixiBoard';
 
-const TrachGameClient = Client( {
+const TrachGameClientDebug = Client( {
     game       : TrachGame,
-    numPlayers : 2,
+    numPlayers : 4,
     // loading: LoadingComponent,
-    board      : TrachGameBoard,
+    board      : PixiBoard,
     multiplayer: Local(),
     debug      : true,
 } );
 
+const TrachGameClient = Client( {
+    game       : TrachGame,
+    numPlayers : 4,
+    // loading: LoadingComponent,
+    board      : PixiBoard,
+    multiplayer: Local(),
+    debug      : false,
+} );
+
+
 const App = () => (
     <div className = 'app'>
-        <TrachGameClient playerID = "0" />
-        <TrachGameClient playerID = "1" />
+        <div>
+            <span style = { {
+                display : 'block',
+                position: 'absolute',
+            } }> Client#0 - Debug</span>
+            <TrachGameClientDebug playerID = "0"/>
+        </div>
+        {/*<div>Client#1<TrachGameClient playerID = "1"/></div>*/ }
+        {/*<div>Client#2<TrachGameClient playerID = "2"/></div>*/ }
+        {/*<div>Client#3<TrachGameClient playerID = "3"/></div>*/ }
     </div>
 );
 

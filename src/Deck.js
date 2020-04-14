@@ -1,20 +1,18 @@
 import Card from './Card';
 
-// export const deck = [
-//     ...new Array( 15 ).fill( new Card( 'Attack' ) ),
-//     ...new Array( 2 ).fill( new Card( 'Nuclear Button' ) ),
-//     ...new Array( 2 ).fill( new Card( 'Globalisation' ) ),
-//     ...new Array( 5 ).fill( new Card( 'Defense' ) ),
-//     ...new Array( 5 ).fill( new Card( 'Deflect' ) ),
-//     ...new Array( 5 ).fill( new Card( 'Piercing' ) ),
-//     ...new Array( 5 ).fill( new Card( 'Transfer' ) ),
-//     ...new Array( 5 ).fill( new Card( 'Brick' ) ),
-//     ...new Array( 5 ).fill( new Card( 'Shelter' ) ),
-//     ...new Array( 5 ).fill( new Card( 'Healing' ) ),
-//     ...new Array( 1 ).fill( new Card( 'Resurrection' ) ),
-//     ...new Array( 5 ).fill( new Card( 'Freeze' ) ),
-//     ...new Array( 5 ).fill( new Card( 'Massive Attack' ) ),
-// ];
+import attack from './assets/img/cards/attack.jpg';
+import brick from './assets/img/cards/brick.jpg';
+import defense from './assets/img/cards/defense.jpg';
+import deflection from './assets/img/cards/deflection.jpg';
+import freeze from './assets/img/cards/freeze.jpg';
+import globalisation from './assets/img/cards/globalisation.jpg';
+import healing from './assets/img/cards/healing.jpg';
+import massiveAttack from './assets/img/cards/massiveAttack.jpg';
+import nuclearButton from './assets/img/cards/nuclearButton.jpg';
+import piercing from './assets/img/cards/piercing.jpg';
+import resurrection from './assets/img/cards/resurrection.jpg';
+import shelter from './assets/img/cards/shelter.jpg';
+import transfer from './assets/img/cards/transfer.jpg';
 
 /**
  *
@@ -35,19 +33,19 @@ function shuffle( a ) {
 export default class Deck {
 
     static cards = [
-        ...new Array( 15 ).fill( new Card( 'Attack' ) ),
-        ...new Array( 2 ).fill( new Card( 'Nuclear Button' ) ),
-        ...new Array( 2 ).fill( new Card( 'Globalisation' ) ),
-        ...new Array( 5 ).fill( new Card( 'Defense' ) ),
-        ...new Array( 5 ).fill( new Card( 'Deflection' ) ),
-        ...new Array( 5 ).fill( new Card( 'Piercing' ) ),
-        ...new Array( 5 ).fill( new Card( 'Transfer' ) ),
-        ...new Array( 5 ).fill( new Card( 'Brick' ) ),
-        ...new Array( 5 ).fill( new Card( 'Shelter' ) ),
-        ...new Array( 5 ).fill( new Card( 'Healing' ) ),
-        ...new Array( 1 ).fill( new Card( 'Resurrection' ) ),
-        ...new Array( 5 ).fill( new Card( 'Freeze' ) ),
-        ...new Array( 5 ).fill( new Card( 'Massive Attack' ) ),
+        ...Array( 15 ).fill( new Card( 'Attack', attack ) ),
+        ...Array( 5 ).fill( new Card( 'Brick', brick ) ),
+        ...Array( 5 ).fill( new Card( 'Defense', defense ) ),
+        ...Array( 5 ).fill( new Card( 'Deflection', deflection ) ),
+        ...Array( 5 ).fill( new Card( 'Freeze', freeze ) ),
+        ...Array( 2 ).fill( new Card( 'Globalisation', globalisation ) ),
+        ...Array( 5 ).fill( new Card( 'Healing', healing ) ),
+        ...Array( 5 ).fill( new Card( 'Massive Attack', massiveAttack ) ),
+        ...Array( 2 ).fill( new Card( 'Nuclear Button', nuclearButton ) ),
+        ...Array( 5 ).fill( new Card( 'Piercing', piercing ) ),
+        ...Array( 1 ).fill( new Card( 'Resurrection', resurrection ) ),
+        ...Array( 5 ).fill( new Card( 'Shelter', shelter ) ),
+        ...Array( 5 ).fill( new Card( 'Transfer', transfer ) ),
     ];
 
     /**

@@ -1,1 +1,1 @@
-{"version":3,"sources":["Board.less"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,YAAA;EACA,YAAA;;AAHJ,KAKI,QAAQ;EACJ,cAAA","file":"Board.css"}
+{"version":3,"sources":["Board.less"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,YAAA;EACA,YAAA;;AAHJ,KAKI;EACI,aAAA;EACA,8BAAA;;AAPR,KAUI,QAAQ;EACJ,cAAA;;AAXR,KAcI;EACI,aAAA;EACA,qBAAA","file":"Board.css"}
