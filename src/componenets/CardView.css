@@ -1,0 +1,57 @@
+.card {
+  width: 153.6px;
+  height: 240px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  border-image: url('/img/border.png') 18;
+  background-image: url('/img/bg1.png');
+  background-position: center;
+}
+.card .name {
+  order: 1;
+}
+.card .art {
+  order: 2;
+  flex-shrink: 2;
+}
+.card .priority {
+  order: 3;
+  align-self: flex-start;
+}
+.card:hover {
+  z-index: 10;
+}
+.card-offensive {
+  background-color: #B4300A;
+}
+.card-offensive:hover {
+  box-shadow: 0 0 20px #B4300A;
+}
+.card-defensive {
+  background-color: #0047e0;
+}
+.card-defensive:hover {
+  box-shadow: 0 0 20px #0047e0;
+}
+.card-buff {
+  background-color: #87E431;
+}
+.card-buff:hover {
+  box-shadow: 0 0 20px #87E431;
+}
+.card-special {
+  background-color: #8C8C8C;
+}
+.card-special:hover {
+  box-shadow: 0 0 20px #8C8C8C;
+}
+.card-regen {
+  background-color: #00aaff;
+}
+.card-regen:hover {
+  box-shadow: 0 0 20px #00aaff;
+}
+/*# sourceMappingURL=CardView.css.map */

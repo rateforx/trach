@@ -1,0 +1,16 @@
+.hand {
+  position: fixed;
+  left: -50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 100%;
+}
+.hand .card {
+  transform-origin: center 200%;
+}
+.hand .card:hover {
+  transform: scale(1.5);
+}
+/*# sourceMappingURL=HandView.css.map */

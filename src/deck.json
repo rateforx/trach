@@ -1,0 +1,152 @@
+{
+    "base" : [
+        {
+            "code"        : "attack",
+            "name"        : "Attack",
+            "description" : "Takes 1 health point from a chosen player.",
+            "type"        : "offensive",
+            "count"       : 15,
+            "priority"    : {
+                "self"  : 6,
+                "other" : 6
+            },
+            "value"       : 1
+        },
+        {
+            "code"        : "brick",
+            "name"        : "Brick",
+            "description" : "Does nothing, but when you collect five you win!",
+            "type"        : "special",
+            "count"       : 5,
+            "priority"    : {
+                "self"  : null,
+                "other" : null
+            }
+        },
+        {
+            "code"        : "defense",
+            "name"        : "Defense",
+            "description" : "Neutralises an attack. Response card.",
+            "type"        : "defensive",
+            "count"       : 5,
+            "priority"    : {
+                "self"  : 5,
+                "other" : 5
+            }
+        },
+        {
+            "code"        : "deflect",
+            "name"        : "Deflect",
+            "description" : "Returns an attack back to its origin. Response card.",
+            "type"        : "defensive",
+            "count"       : 5,
+            "priority"    : {
+                "self"  : 5,
+                "other" : 5
+            }
+        },
+        {
+            "code"        : "freeze",
+            "name"        : "Freeze",
+            "description" : "Defends you from other players actions until the beginning of your next turn.",
+            "type"        : "defensive",
+            "count"       : 5,
+            "priority"    : {
+                "self"  : 3,
+                "other" : 3
+            }
+        },
+        {
+            "code"        : "global",
+            "name"        : "Global",
+            "description" : "Makes a buffed card affect every player.",
+            "type"        : "buff",
+            "count"       : 2,
+            "priority"    : {
+                "self"  : null,
+                "other" : null
+            }
+        },
+        {
+            "code"        : "heal",
+            "name"        : "Heal",
+            "description" : "Restores 1 health point of a chosen player.",
+            "type"        : "regen",
+            "count"       : 5,
+            "priority"    : {
+                "self"  : 0,
+                "other" : 4
+            },
+            "value"       : 1
+        },
+        {
+            "code"        : "massive-attack",
+            "name"        : "Massive Attack",
+            "description" : "Deals 1 point of damage to every player but you.",
+            "type"        : "offensive",
+            "count"       : 5,
+            "priority"    : {
+                "self"  : 6,
+                "other" : 6
+            },
+            "value"       : 1
+        },
+        {
+            "code"        : "nuclear-button",
+            "name"        : "Nuclear Button",
+            "description" : "Deals 3 point of damage to every player including yourself.",
+            "type"        : "offensive",
+            "count"       : 2,
+            "priority"    : {
+                "self"  : 2,
+                "other" : 2
+            },
+            "value"       : 3
+        },
+        {
+            "code"        : "pierce",
+            "name"        : "Pierce",
+            "description" : "Raises the priority of an attack to IV.",
+            "type"        : "buff",
+            "count"       : 5,
+            "priority"    : {
+                "self"  : 4,
+                "other" : 4
+            },
+            "value"       : 4
+        },
+        {
+            "code"        : "resurrect",
+            "name"        : "Resurrect",
+            "description" : "Brings a chosen dead player back to life with 5 health points and new set of cards. Will be automatically used if you die whilst holding this card.",
+            "type"        : "regen",
+            "count"       : 1,
+            "priority"    : {
+                "self"  : 0,
+                "other" : 4
+            }
+        },
+        {
+            "code"        : "shelter",
+            "name"        : "Shelter",
+            "description" : "Defends you from a Nuclear Button card effect. Response card.",
+            "type"        : "defensive",
+            "count"       : 5,
+            "priority"    : {
+                "self"  : 1,
+                "other" : 1
+            }
+        },
+        {
+            "code"        : "transfer",
+            "name"        : "Transfer",
+            "description" : "Shifts an attack to another player other than its origin. Response card.",
+            "type"        : "defensive",
+            "count"       : 5,
+            "priority"    : {
+                "self"  : 5,
+                "other" : 5
+            }
+        }
+    ]
+}

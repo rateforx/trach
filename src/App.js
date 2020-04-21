@@ -2,35 +2,34 @@ import { Local }          from 'boardgame.io/multiplayer';
 import { Client }         from 'boardgame.io/react';
 import React              from 'react';
 import './App.css';
-import { TrachGameBoard } from './Board';
+import { TrachGameBoard } from './componenets/BoardView';
 import { TrachGame }      from './Game';
 import PixiBoard          from './PixiBoard';
 
 const TrachGameClientDebug = Client( {
-    game       : TrachGame,
-    numPlayers : 4,
+    game        : TrachGame,
+    numPlayers  : 1,
     // loading: LoadingComponent,
-    board      : PixiBoard,
-    multiplayer: Local(),
-    debug      : true,
+    board       : TrachGameBoard,
+    multiplayer : false,
+    debug       : true,
 } );
 
-const TrachGameClient = Client( {
-    game       : TrachGame,
-    numPlayers : 4,
-    // loading: LoadingComponent,
-    board      : PixiBoard,
-    multiplayer: Local(),
-    debug      : false,
-} );
-
+// const TrachGameClient = Client( {
+//     game       : TrachGame,
+//     numPlayers : 4,
+//     // loading: LoadingComponent,
+//     board      : PixiBoard,
+//     multiplayer: Local(),
+//     debug      : false,
+// } );
 
 const App = () => (
     <div className = 'app'>
         <div>
             <span style = { {
-                display : 'block',
-                position: 'absolute',
+                display  : 'block',
+                position : 'absolute',
             } }> Client#0 - Debug</span>
             <TrachGameClientDebug playerID = "0"/>
         </div>

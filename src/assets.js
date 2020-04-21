@@ -4,6 +4,19 @@ import background3 from './assets/bg3.png';
 import background4 from './assets/bg4.png';
 import background5 from './assets/bg5.png';
 import border      from './assets/border.png';
+import reverse     from './assets/img/cards/globalisation.jpg';
+
+export const assets = {
+    backgrounds : [
+        background1,
+        background2,
+        background3,
+        background4,
+        background5,
+    ],
+    border      : border,
+    reverse     : reverse,
+};
 
 export const backgrounds = [
     background1,
@@ -14,3 +27,5 @@ export const backgrounds = [
 ];
 
 export const borderTexture = border;
+
+// todo cleanup

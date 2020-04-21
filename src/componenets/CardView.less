@@ -1,0 +1,88 @@
+@cardHeight : 240px;
+@cardWidth  : .64 * @cardHeight;
+
+@offensive  : #B4300A;
+@defensive  : #0047e0;
+@buff       : #87E431;
+@special    : #8C8C8C;
+@regen      : #00aaff;
+
+@glowSize   : 20px;
+
+.card {
+    width               : @cardWidth;
+    height              : @cardHeight;
+
+    border-radius       : 10px;
+    padding             : 20px;
+
+    display             : flex;
+    flex-flow           : column nowrap;
+    justify-content     : space-around;
+
+    border-image        : url('/img/border.png') 18;
+
+    background-image    : url('/img/bg1.png');
+    background-position : center;
+
+    .name {
+        order : 1;
+    }
+
+    .art {
+        order       : 2;
+        flex-shrink : 2;
+    }
+
+    .priority {
+        order      : 3;
+        align-self : flex-start;
+    }
+
+    &:hover {
+        // todo bring to front somehow
+        z-index : 10;
+
+    }
+
+}
+
+.card-offensive {
+    background-color : @offensive;
+
+    &:hover {
+        box-shadow : 0 0 @glowSize @offensive;
+    }
+}
+
+.card-defensive {
+    background-color : @defensive;
+
+    &:hover {
+        box-shadow : 0 0 @glowSize @defensive;
+    }
+}
+
+.card-buff {
+    background-color : @buff;
+
+    &:hover {
+        box-shadow : 0 0 @glowSize @buff;
+    }
+}
+
+.card-special {
+    background-color : @special;
+
+    &:hover {
+        box-shadow : 0 0 @glowSize @special;
+    }
+}
+
+.card-regen {
+    background-color : @regen;
+
+    &:hover {
+        box-shadow : 0 0 @glowSize @regen;
+    }
+}

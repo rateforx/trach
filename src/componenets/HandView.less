@@ -1,0 +1,21 @@
+.hand {
+
+    position  : fixed;
+    //bottom    : -20%;
+    left      : -50%;
+    transform : translateX(-50%);
+
+    display   : flex;
+    flex-flow : row nowrap;
+    width:100%;
+    height:100%;
+
+    .card {
+        transform-origin : center 200%;
+
+        &:hover {
+            transform : scale(1.5);
+        }
+    }
+
+}
