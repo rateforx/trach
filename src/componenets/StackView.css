@@ -1,0 +1,13 @@
+.stack {
+  padding: 20px;
+  border: dashed #bfad8f77 3px;
+  border-radius: 20px;
+}
+.stack:before {
+  content: 'Stack';
+  position: relative;
+  top: -3rem;
+  font-size: 1.5rem;
+  color: #bfad8f77;
+}
+/*# sourceMappingURL=StackView.css.map */

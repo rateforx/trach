@@ -80,8 +80,8 @@
             "value"       : 1
         },
         {
-            "code"        : "massive-attack",
-            "name"        : "Massive Attack",
+            "code"        : "massed-attack",
+            "name"        : "Massed Attack",
             "description" : "Deals 1 point of damage to every player but you.",
             "type"        : "offensive",
             "count"       : 5,

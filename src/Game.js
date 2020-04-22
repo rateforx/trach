@@ -95,22 +95,16 @@ export const TrachGame = {
             game.stack.push(
                 game.players[ context.currentPlayer ].hand.pop(),
             );
-            drawCard( game, context, context.currentPlayer );
         },
 
         discardCardTest ( game, context ) {
             game.secret.discarded.push(
                 game.players[ context.currentPlayer ].hand.pop(),
             );
-            drawCard( game, context, context.currentPlayer );
         },
 
         emptyDiscardedTest ( game, context ) {
             game.secret.discarded = [];
-        },
-
-        emptyCurrentPlayerTest ( game, context ) {
-            game.players[ context.currentPlayer ].hand = [];
         },
 
         drawCard ( game, context ) {

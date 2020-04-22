@@ -1,0 +1,44 @@
+@borderColor : #bfad8f77;
+@borderWidth : 3px;
+
+.deck {
+    height: auto;
+    width: auto;
+
+    padding       : 20px;
+    color     : @borderColor;
+
+    border        : dashed @borderColor @borderWidth;
+    border-left: none;
+    border-radius : 0 20px 20px 0;
+
+    transition: all 200ms ease-in-out;
+
+    &:before {
+        content   : 'Deck';
+        position  : absolute;
+        top       : -1.5rem;
+        font-size : 1.5rem;
+    }
+
+    &:after {
+        content: 'Click to draw card';
+        position: absolute;
+        bottom: -2rem;
+        font-size: 1.5rem;
+        opacity: 0;
+    }
+
+    .card {
+        position: absolute;
+    }
+
+    &:hover {
+        border-color: white;
+        color: white;
+
+        &:after {
+            opacity : 1;
+        }
+    }
+}

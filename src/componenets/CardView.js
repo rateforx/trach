@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './CardView.less';
+import './CardView.css';
 import { romanize }         from '../utils';
+
 
 export default class Card extends Component {
 
@@ -18,15 +19,38 @@ export default class Card extends Component {
             `${ romanize( other ) } (${ romanize( self ) })`;
 
         return (
-            <div className = { `card card-${ this.props.card.type }` }>
-                <h1 className = "name">{ this.props.card.name }</h1>
-                { this.state.showDescription ? (
-                    <p className = "description">{ this.props.card.description }</p>
-                ) : (
-                    <img className = "art" alt = "" src = { undefined }/>
-                ) }
-                <h2 className = "priority">{ priority }</h2>
+            <div className = "card-wrapper">
+                <div
+                    className = { `card card-${ this.props.card.type }` }
+                    style = { this.props.style }
+                    onClick = { () => {
+                        this.setState( { showDescription : !this.state.showDescription } );
+                    } }
+                >
+                    <h1 className = "name">{ this.props.card.name }</h1>
+                    { this.state.showDescription ? (
+                        <p className = "description">{ this.props.card.description }</p>
+                    ) : (
+                        <img className = "art" alt = "" src = { undefined }/>
+                    ) }
+                    <h3 className = "priority">{ priority }</h3>
+                </div>
             </div>
         );
     }
 };
+
+export class CardReverse extends Component {
+
+    render () {
+        return (
+            <div
+                className = "card"
+                style = { this.props.style }
+            >
+                <div className = "card-reverse"/>
+            </div>
+        );
+    }
+
+}

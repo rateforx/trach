@@ -1,5 +1,3 @@
-import { PixiComponent, Sprite } from '@inlet/react-pixi';
-
 export default class Player {
 
     static type = 'Player';
@@ -28,11 +26,3 @@ export default class Player {
 
     die ( game, context ) {}
 }
-
-export const PixiPlayer = PixiComponent( 'PixiPlayer', {
-
-    create ( props ) {
-
-    },
-    applyProps () {},
-} );

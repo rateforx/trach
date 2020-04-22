@@ -9,24 +9,33 @@
 
 @glowSize   : 20px;
 
+@borderWidth: 1px;
+
 .card {
     width               : @cardWidth;
     height              : @cardHeight;
 
     border-radius       : 10px;
-    padding             : 20px;
+
+    padding             : .5em;
 
     display             : flex;
     flex-flow           : column nowrap;
-    justify-content     : space-around;
+    justify-content     : space-between;
 
-    border-image        : url('/img/border.png') 18;
+    border              : solid @borderWidth #bfad8f;
+    //border-image-source        : url('/img/border.png');
+    //border-image-slice: 18;
+    //border-image-width: 10px;
+    //border-image-outset: -15px;
 
     background-image    : url('/img/bg1.png');
     background-position : center;
 
     .name {
-        order : 1;
+        order      : 1;
+        text-align : center;
+        margin-top : .25em;
     }
 
     .art {
@@ -34,15 +43,15 @@
         flex-shrink : 2;
     }
 
-    .priority {
-        order      : 3;
-        align-self : flex-start;
+    .description {
+        order      : 2;
+        text-align : justify;
     }
 
-    &:hover {
-        // todo bring to front somehow
-        z-index : 10;
-
+    .priority {
+        order         : 3;
+        //align-self : flex-start;
+        margin-bottom : .25em;
     }
 
 }
@@ -85,4 +94,13 @@
     &:hover {
         box-shadow : 0 0 @glowSize @regen;
     }
+}
+
+.card-reverse {
+    width             : 100%;
+    height            : 100%;
+
+    background-image  : url('/img/reverse-art.svg');
+    background-repeat : no-repeat;
+    background-position: center;
 }

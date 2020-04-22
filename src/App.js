@@ -4,14 +4,13 @@ import React              from 'react';
 import './App.css';
 import { TrachGameBoard } from './componenets/BoardView';
 import { TrachGame }      from './Game';
-import PixiBoard          from './PixiBoard';
 
 const TrachGameClientDebug = Client( {
     game        : TrachGame,
     numPlayers  : 1,
     // loading: LoadingComponent,
     board       : TrachGameBoard,
-    multiplayer : false,
+    multiplayer : Local(),
     debug       : true,
 } );
 
@@ -26,16 +25,11 @@ const TrachGameClientDebug = Client( {
 
 const App = () => (
     <div className = 'app'>
-        <div>
             <span style = { {
                 display  : 'block',
                 position : 'absolute',
             } }> Client#0 - Debug</span>
-            <TrachGameClientDebug playerID = "0"/>
-        </div>
-        {/*<div>Client#1<TrachGameClient playerID = "1"/></div>*/ }
-        {/*<div>Client#2<TrachGameClient playerID = "2"/></div>*/ }
-        {/*<div>Client#3<TrachGameClient playerID = "3"/></div>*/ }
+        <TrachGameClientDebug playerID = "0"/>
     </div>
 );
 

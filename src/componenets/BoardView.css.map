@@ -1,1 +1,1 @@
-{"version":3,"sources":["BoardView.less"],"names":[],"mappings":"AAAA;EAEI,cAAA;EACA,YAAA;EACA,aAAA;EAGA,sBAAA;EACA,YAAA;EACA,YAAA","file":"BoardView.css"}
+{"version":3,"sources":["BoardView.less"],"names":[],"mappings":"AAAA;EACI,cAAA;EACA,YAAA;EACA,aAAA;EACA,gBAAA;EAEA,sBAAA;EACA,cAAA;EAEA,aAAmB,sBAAnB;EACA,eAAA;;AAVJ,KAYI;EACI,kBAAA;EACA,QAAA;EACA,WAAkB,gBAAlB;EAEA,YAAA;EACA,YAAA;EAEA,aAAA;EACA,qBAAA;EACA,8BAAA","file":"BoardView.css"}

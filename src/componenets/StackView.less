@@ -1,0 +1,28 @@
+@borderColor : #bfad8f77;
+@borderWidth : 3px;
+
+.stack {
+
+    //display       : flex;
+    //flex-flow     : row nowrap;
+    //width         : 50vw;
+    //height        : 30vh;
+
+    //position      : fixed;
+    //left          : 50%;
+    //top           : 50%;
+    //transform     : translate(-50%, -50%);
+
+    padding       : 20px;
+
+    border        : dashed @borderColor @borderWidth;
+    border-radius : 20px;
+
+    &:before {
+        content   : 'Stack';
+        position  : relative;
+        top       : -3rem;
+        font-size : 1.5rem;
+        color     : @borderColor;
+    }
+}

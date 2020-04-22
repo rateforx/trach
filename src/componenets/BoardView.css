@@ -2,8 +2,20 @@
   display: block;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   background-color: #111;
-  color: white;
-  padding: 2em;
+  color: #bfad8f;
+  font-family: 'Special Elite', serif;
+  font-size: 12px;
+}
+.game .stacks {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=BoardView.css.map */

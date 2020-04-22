@@ -1,0 +1,17 @@
+.discarded {
+  padding: 20px;
+  border: dashed #bfad8f77 3px;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+}
+.discarded:before {
+  content: 'Discarded';
+  position: relative;
+  top: -3rem;
+  font-size: 1.5rem;
+  color: #bfad8f77;
+}
+.discarded .card {
+  position: absolute;
+}
+/*# sourceMappingURL=DiscardedView.css.map */

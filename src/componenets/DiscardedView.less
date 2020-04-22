@@ -1,0 +1,22 @@
+@borderColor : #bfad8f77;
+@borderWidth : 3px;
+
+.discarded {
+    padding       : 20px;
+
+    border        : dashed @borderColor @borderWidth;
+    border-right: none;
+    border-radius : 20px 0 0 20px;
+
+    &:before {
+        content   : 'Discarded';
+        position  : relative;
+        top       : -3rem;
+        font-size : 1.5rem;
+        color     : @borderColor;
+    }
+
+    .card {
+        position : absolute;
+    }
+}
